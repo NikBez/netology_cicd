@@ -4,4 +4,7 @@ psycopg2-binary
 environs
 django-filter
 gunicorn
-expect
+
+flake8
+pytest
+black
