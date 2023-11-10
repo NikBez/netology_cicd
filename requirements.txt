@@ -4,3 +4,4 @@ psycopg2-binary
 environs
 django-filter
 gunicorn
+expect
