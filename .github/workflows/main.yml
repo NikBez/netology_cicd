@@ -14,7 +14,6 @@ jobs:
       POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
       POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
       SECRET_KEY: ${{ secrets.SECRET_KEY }}
-
     services:
       postgres_db:
         image: postgres:12
@@ -25,10 +24,10 @@ jobs:
         ports:
           - 5432:5432
         options:
-          health-cmd pg_isready
-          health-interval 5s
-          health-timeout 5s
-          health-retries 5
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
     steps:
     - name: Проверка наличия обновлений
       uses: actions/checkout@v3
