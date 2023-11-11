@@ -24,4 +24,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(["GET"])
 def test_view(request):
-    return Response('Тестовый ответ')
+    return Response('Новый тестовый ответ')
